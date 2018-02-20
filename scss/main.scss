@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+
+
+// Define defaults for each variable.
+
+$base-font-family: 'Fira Sans', "Helvetica Neue", Helvetica, Arial, sans-serif, system !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     24px !default;
+
+$text-color:       #000 !default;
+$background-color: #FFF !default;
+$brand-color:      #1269CE !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$phone-max:			599px !default;
+$tablet-portrait:   600px !default;
+$tablet-landscape:  900px !default;
+$desktop:        	1200px !default;
+$big-desktop:       1800px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+//Import partials
+@import
+	"base/base",
+	"base/layout"
+;

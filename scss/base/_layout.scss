@@ -1,0 +1,89 @@
+body{
+	font-family: $base-font-family;
+	max-width: 100%;
+	overflow: hidden;
+	background-image: none;
+    background-image: -webkit-radial-gradient(0% 0%, circle, #fff,#fff 0.5px,transparent 1px),-webkit-radial-gradient(100% 0%, circle, #fff,#fff 0.5px,transparent 1px),-webkit-radial-gradient(100% 100%, circle, #fff,#fff 0.5px,transparent 1px),-webkit-radial-gradient(0% 100%, circle, #fff,#fff 0.5px,transparent 1px),-webkit-radial-gradient(50% 50%, circle, #fff,#fff 0.5px,transparent 1px);
+    background-image: radial-gradient( circle at 0% 0%, #fff,#fff 0.5px,transparent 1px),radial-gradient( circle at 100% 0%, #fff,#fff 0.5px,transparent 1px),radial-gradient( circle at 100% 100%, #fff,#fff 0.5px,transparent 1px),radial-gradient( circle at 0% 100%, #fff,#fff 0.5px,transparent 1px),radial-gradient( circle at 50% 50%, #fff,#fff 0.5px,transparent 1px);
+    background-size: 9px 9px;
+    background-color: $brand-color;
+	@include media-query($phone-max){ 
+  	}
+}
+
+section{
+	background-color: #fff;
+    border-radius: 24px;
+    width: 38.2%;
+    margin-top: $spacing-unit*4;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 0px 1px 1px black;
+    padding: 24px;
+    @include media-query($phone-max){
+    	width: 72%;
+    	margin-top: $spacing-unit*1;
+    }
+}
+
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	color: black;
+	background-color: white;
+	padding: $spacing-unit;
+	font-size: $spacing-unit/2;
+}
+
+
+h1{
+	margin:$spacing-unit auto;
+	text-transform: uppercase;
+	//letter-spacing: -.075em;
+	text-align: center;
+	width: 61.8%;
+  	// @include media-query($phone-max){ 
+//  		font-size: 4rem; 
+//  		line-height: 3rem;
+//  		margin-top: $spacing-unit;
+//  		margin-left: auto;
+//  		margin-right: auto;
+//  		text-align: center;
+//  		margin-bottom: $spacing-unit;
+//  	}
+  	@include media-query($tablet-landscape){
+  	}
+}
+
+p{
+	margin: 0 auto;
+	letter-spacing: -.25px;
+	text-align: center;
+	width: 61.8%;
+	@include media-query($phone-max){ 
+  	}
+}
+
+button{
+	display: block;
+	margin: $spacing-unit*2 auto $spacing-unit*1.5 auto;
+	padding: $spacing-unit;
+	border: 1px solid black;
+	border-radius: $spacing-unit/2;
+	cursor: pointer;
+	text-align: center;
+	background-color: $background-color;
+	@include media-query($phone-max){ 
+  	}
+}
+
+button:hover{
+	background-color: $brand-color;
+	color: white;
+}
+
+
